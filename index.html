@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Exam</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+</head>
+
+<body>
+    <section id="loading" class="d-flex align-items-center justify-content-center">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+    <section class="slider position-fixed d-flex h-100  ">
+
+        <div class="menu-nav pt-2 position-relative overflow-hidde">
+            <div class="nav-item overflow-hidden">
+                <ul>
+                    <li class="item1">
+                        <a class="nav-category" href="#searshInputs" id="now_playing">Now Playing</a>
+                    </li>
+                    <li class="item2">
+                        <a class="nav-category" href="#searshInputs" id="popular">Popular</a>
+                    </li>
+                    <li class="item3">
+                        <a class="nav-category" href="#searshInputs" id="top_rated">Top Rated</a>
+                    </li>
+                    <li class="item4">
+                        <a class="nav-category" href="#searshInputs" id="trending">Trending</a>
+                    </li>
+                    <li class="item5">
+                        <a class="nav-category" href="#searshInputs" id="upcoming">Upcoming</a>
+                    </li>
+                    <li class="item6">
+                        <a class="nav-category" href="#contact" id="notApi">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-icons w-100">
+                <a href=""><i class="fab fa-facebook-f mx-1"></i></a>
+                <a href="#"><i class="fab fa-twitter mx-1"></i></i>
+                    <a href="#"><i class="fas fa-globe mx-1"></i></a>
+                    <div class="pt-3 text-left">
+                        <span>Copyright Â© 2022 All Rights Reserved.</span>
+                    </div>
+            </div>
+        </div>
+        <div class="header-nav  bg-white position-relative pt-2">
+
+            <div class="header-nav-logo w-75 m-auto text-center pt-2">
+                <img src="img/logo.png" class="w-75" alt="">
+            </div>
+            <div class="header-toggel-menu">
+                <i class="fa fa-align-justify"></i>
+            </div>
+            <div class="header-nav-icons align-items-end">
+                <div class="header-nav-lang">
+                    <i class="fa fa-globe"></i>
+                </div>
+                <div class="header-nav-share">
+                    <i class="fa fa-share" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="searshInputs">
+        <div class="container mt-5 mx-auto">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" name="" id="allMovies" class="form-control mb-5"
+                        placeholder="get movies by word...">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="" id="search" class="form-control mb-5" placeholder="search..">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="container my-3">
+            <div class="row res">
+
+            </div>
+        </div>
+    </section>
+    <section id="posts">
+        <div class="container my-3">
+            <div class="row post">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container my-5">
+            <h2>Contact Us...</h2>
+            <div class="row">
+                <div class="col-md-6 my-2 ">
+                    <div class="inputs-group">
+                        <input type="text" class="form-control" id="name" placeholder="Enter your Name">
+                        <div class="alert alert-danger d-none" id="nameAlert" role="alert">
+                            your Name is not valid
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="inputs-group">
+                        <input type="text" class="form-control" id="email" placeholder="Enter Email">
+                        <div class="alert alert-danger d-none" id="emailAlert" role="alert">
+                            Enter valid email
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="inputs-group">
+                        <input type="text" class="form-control" id="phone" placeholder="Enter Phone">
+                        <div class="alert alert-danger d-none" id="phoneAlert" role="alert">
+                            Enter valid phone
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="inputs-group">
+                        <input type="text" class="form-control" id="age" placeholder="Enter Age">
+                        <div class="alert alert-danger d-none" id="ageAlert" role="alert">
+                            Enter valid age
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="inputs-group">
+                        <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                        <div class="alert alert-danger d-none" id="passwordAlert" role="alert">
+                            Entre valid password *Minimum eight characters, at least one letter and one number:*
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="inputs-group">
+                        <input type="text" class="form-control" id="rePassword" placeholder="Enter RePassword">
+                        <div class="alert alert-danger d-none" id="rePasswordAlert" role="alert">
+                            Entre valid RePassword
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button type="submit" disabled id="submitBtn" class="btn btn-outline-danger mt-3">Submit</button>
+        </div>
+    </section>
+
+
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

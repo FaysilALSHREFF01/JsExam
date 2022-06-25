@@ -135,7 +135,7 @@ allMoviesInput.addEventListener("input", function () {
 
 // search in list(
 searchInput.addEventListener("input", function () {
-    
+    let cartoon=`.res`
     let searchWord = this.value
     // console.log();
     let searchList = [];
@@ -154,7 +154,7 @@ searchInput.addEventListener("input", function () {
 
     }
     //call fun and send list and div class
-    displayMovies(searchList, ".res")
+    displayMovies(searchList, cartoon)
 })
 
 
@@ -288,11 +288,11 @@ else
 }
 
 
-// scroll
-$(".nav-category").click(function(e){
-    let linkHref = $(e.target).attr('href');
-    console.log(linkHref);
-        let sectionOffset =$(linkHref).offset().top;
-        console.log(sectionOffset);
-    $("html,body").animate({screenTop:sectionOffset},2500)
-})
+// // scroll
+// $(".nav-category").click(function(e){
+//     let linkHref = $(e.target).attr('href');
+//     console.log(linkHref);
+//         let sectionOffset =$(linkHref).offset().top;
+//         console.log(sectionOffset);
+//     $("html,body").animate({screenTop:sectionOffset},2500)
+// })
